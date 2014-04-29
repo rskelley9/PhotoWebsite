@@ -1,10 +1,16 @@
 # About
 
-This application is a photography website built with Grokphoto and Devise engines, and a customized user interface.
+This application is a photography website built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is designed with a customized rails template.
 
-# GrokPhoto
+## GrokPhoto
 
 GrokPhoto is a professional photographer's client providing a CMS, and gallery solutions. Visit [Grokphoto.com](http://grokphoto.org/) for more information.
+
+## Devise
+
+Devise is a flexible authentication solution for Rails based on Warden. It is a Rack-based, complete MVC solution that employs a Rails engine. Devise allows you to have multiple models signed in at the same time and is focused on modularity.
+
+For more information on Devise and documentation, visit the [Devise Wiki](https://github.com/plataformatec/devise/wiki).
 
 ## Software Requirements and Dependencies
 
