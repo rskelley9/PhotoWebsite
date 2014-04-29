@@ -1,40 +1,30 @@
+# About
+
+This application is a photography website built with Grokphoto and Devise engines, and a customized user interface.
+
 # GrokPhoto
 
-GrokPhoto is a professional photographer's client gallery solution.
+GrokPhoto is a professional photographer's client providing a CMS, and gallery solutions. Visit [Grokphoto.com](http://grokphoto.org/) for more information.
 
-This version is work in progress / port to rails 3.2
+## Software Requirements and Dependencies
 
-For the stable rails 2 version please see the version 2 branch:
-[Version 2](https://github.com/rapind/grokphoto/tree/v2.0)
-
-
-## Software Requirements
-
+* Rails 3.2+
 * ImageMagick
 * SQLite3 or MySQL or PostgreSQL
 
+## Getting Started
 
-## Installation
-
-    git clone git://github.com/rapind/grokphoto.git
-    cd grokphoto
-    bundle
-
-Then initialize the database and start the server:
+Initialize the database by running the following commands in your terminal:
 
     rake db:create
     rake db:migrate
     rake db:seed
-    rails server
-
-At this point you should have a working site with some basic seed data that you can start to customize.
-
 
 ## Initial Configuration
 
-1. Login to the administration area (/admin) using grok@grokphoto.org / password
-2. Click on the Settings tab.
-3. Enter your own information and update the settings.
+1. Start your server: rails s
+2. Login to the admin panel (/admin) using email: grok@grokphoto.org and password: password
+3. Click on the Settings tab and enter your own information.
 
 
 ## Heroku Deployment
@@ -52,7 +42,7 @@ Before you seed the database you'll need to setup an amazon s3 account and bucke
 
 Use your S3 information to fill in the config vars for heroku, then seed the database.
 
-    heroku config:add S3_KEY=change_to_your_amazon_s3_key S3_SECRET=change_to_your_amazon_s3_secret S3_BUCKET=change_to_your_amazon_s3_bucket    
+    heroku config:add S3_KEY=change_to_your_amazon_s3_key S3_SECRET=change_to_your_amazon_s3_secret S3_BUCKET=change_to_your_amazon_s3_bucket
 
 You still need to specify a secret token and session store key:
 
@@ -75,23 +65,23 @@ To specify an environment specific pepper to use when encrypting passwords:
 You can check to make sure all of your heroku environment variables have been properly by listing them:
 
     heroko config
-  
+
 Once done, migrate and seed the database and launch the app.
-	    
+
     heroku run rake db:migrate
     heroku run rake db:seed
-    
+
 Make sure you also enable memcached on heroku with the below command.
 
-	heroku addons:add memcache:5mb   
-   
+	heroku addons:add memcache:5mb
+
 Open up your shiny new GrokPhoto instance!
 
     heroku open
 
 Don't forget to change your admin password using the "Forgot my password" feature.
 
-	 
+
 ## Features
 
 * Personalize your site via the configuration / settings page.
