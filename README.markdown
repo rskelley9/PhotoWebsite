@@ -32,6 +32,10 @@ Initialize the database by running the following commands in your terminal:
 2. Login to the admin panel (/admin) using email: grok@grokphoto.org and password: password
 3. Click on the Settings tab and enter your own information.
 
+## Post with Markdown
+
+Posts published via the Admin Panel can be formatted using Markdown. For documentation and syntax help, visit [DaringFireball.com](http://daringfireball.net/projects/markdown/syntax).
+
 
 ## Heroku Deployment
 
