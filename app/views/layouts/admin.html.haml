@@ -21,7 +21,7 @@
             %li{ :class => controller.controller_name == 'photographers' ? 'active' : '' }= link_to 'Settings', edit_admin_photographer_path
             %li.divider-vertical
             %li= link_to 'Logout', destroy_photographer_session_path, :method => :delete
-        .pull-right= link_to('GrokPhoto Administration', admin_path, :class => 'brand')
+        .pull-right= link_to('SHP Admin Panel', admin_path, :class => 'brand')
   .container
     - if notice
       .alert.alert-block{ :'data-dismiss' => 'alert' }
@@ -41,4 +41,4 @@
       - else
         .span12= yield
   #footer.container
-    &copy; #{link_to('GrokPhoto', 'http://grokphoto.org', :target => '_blank')}, #{Time.now.year}. All Rights Reserved.
+    &copy; #{link_to('Ryan Kelley', 'http://www.ryanskelley.com', :target => '_blank')}, #{Time.now.year}. All Rights Reserved.
