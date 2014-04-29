@@ -32,6 +32,10 @@ Initialize the database by running the following commands in your terminal:
 2. Login to the admin panel (/admin) using email: grok@grokphoto.org and password: password
 3. Click on the Settings tab and enter your own information.
 
+## Blog
+
+You may link your own blog through the Settings tab in the Admin Panel. If you leave it blank, Grokphoto provides a default MarkDown posting system.
+
 ## Post with Markdown
 
 Posts published via the Admin Panel can be formatted using Markdown. For documentation and syntax help, visit [DaringFireball.com](http://daringfireball.net/projects/markdown/syntax).
