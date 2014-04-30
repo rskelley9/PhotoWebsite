@@ -34,7 +34,7 @@ Initialize the database by running the following commands in your terminal:
 
 ## Blog
 
-You may link your own blog through the Settings tab in the Admin Panel. If you leave it blank, Grokphoto provides a default MarkDown posting system.
+You may link your own blog through the Settings tab in the Admin Panel. If you leave it blank, Grokphoto provides a default Markdown posting system.
 
 ## Post with Markdown
 
