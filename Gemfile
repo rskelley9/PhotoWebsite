@@ -25,6 +25,8 @@ gem 'acts_as_list', '~> 0.1'
 # Forms - TODO: Switch to a stable gem once the wrapper stuff is released.
 gem 'simple_form', '~> 2.0'
 
+gem 'awesome_print'
+
 # Image uploads
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly', '~> 0.9'
