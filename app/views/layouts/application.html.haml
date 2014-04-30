@@ -1,7 +1,6 @@
 !!!
 %html{ 'class' => 'no-js', :lang => 'en' }
   %head
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic|Pacifico' rel='stylesheet' type='text/css'>
     %title= @meta_title
     - unless @keywords.blank?
       %meta{ :name => "keywords", :content => @keywords }
@@ -10,7 +9,6 @@
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    <meta name="google-site-verification" content="G3QADOvWjdYALL99LK9x68bXFk5GXOw5pNFb6feMmRo" />
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
