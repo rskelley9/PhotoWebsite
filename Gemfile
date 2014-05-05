@@ -16,6 +16,8 @@ gem 'haml', '~> 3.1'
 # Authentication
 gem 'devise', '~> 1.5'
 
+gem 'blueimp-gallery-rails'
+
 # Responders
 gem 'responders', '~> 0.9'
 

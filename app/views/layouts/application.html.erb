@@ -1,86 +1,91 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="no-js" lang="en">
-  <head>
-    <title>
-      <%= @meta_title %>
-    </title>
-    <% unless @keywords.blank? %>
-      <meta content="<%= @keywords %>" name="keywords"/>
-    <% end %>
-    <% unless @meta_description.blank? %>
-      <meta content="<%= @meta_description %>" name="description"/>
-    <% end %>
-    <%= stylesheet_link_tag 'application' %>
-    <%= javascript_include_tag 'application' %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <ul class="nav">
-            <% galleries.each do |gallery| %>
-              <li class=<%= (defined?(@gallery) and @gallery.id == gallery.id ? 'active' : '')%>> <%=link_to(gallery.name,gallery_url(gallery)) %>
-              </li>
-            <% end %>
-            <% pages.each do |page| %>
-              <li class=<%= (defined?(@page) and @page.id == page.id ? 'active' : '')%>> <%= link_to(page.name, page_url(page)) %>
-              </li>
-            <% end %>
-            <li class=<%= controller.controller_name == 'posts' ? 'active' : '' %>> <%= link_to('Blog', photographer.blog_url.blank? ? posts_url : photographer.blog_url) %>
-            </li>
-            <li class="divider-vertical"></li>
-            <li class=<%= controller.controller_name == 'contact_requests' ? 'active' : '' %>> <%= link_to('Contact', new_contact_request_url) %>
-            </li>
-          </ul>
-          <div class="pull-right">
-            <%= link_to(photographer.name, root_url, :class => 'brand') %>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="outer">
-      <div class="container" id="content">
-        <% if notice %>
-          <div class="alert alert-block" data-dismiss="alert">
-            <a class="close">×</a>
-            <p>
-              <%= notice %>
-            </p>
-          </div>
-        <% end %>
-        <% if content_for?(:title) %>
-          <div class="page-header">
-            <h1>
-              <%= yield(:title) %>
-            </h1>
-            <% if content_for?(:subtitle) %>
-              <p class="subtitle">
-                <%= yield(:subtitle) %>
-              </p>
-            <% end %>
-          </div>
-        <% end %>
-        <div class="row content">
-          <% if content_for?(:sidebar) %>
-            <div class="span3">
-              <div class="well">
-                <%= yield(:sidebar) %>
-                <p> </p>
-                <p> </p>
-              </div>
-            </div>
-            <div class="span9">
-              <%= yield %>
-            </div>
-          <% else %>
-            <div class="span12">
-              <%= yield %>
-            </div>
+<head>
+  <title>
+    <%= @meta_title %>
+  </title>
+  <% unless @keywords.blank? %>
+  <meta content="<%= @keywords %>" name="keywords"/>
+  <% end %>
+  <% unless @meta_description.blank? %>
+  <meta content="<%= @meta_description %>" name="description"/>
+  <% end %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <!-- start blueImp integration -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <!--   end blueImp integration -->
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <% galleries.each do |gallery| %>
+          <li class=<%= (defined?(@gallery) and @gallery.id == gallery.id ? 'active' : '')%>> <%=link_to(gallery.name,gallery_url(gallery)) %>
+          </li>
           <% end %>
+          <% pages.each do |page| %>
+          <li class=<%= (defined?(@page) and @page.id == page.id ? 'active' : '')%>> <%= link_to(page.name, page_url(page)) %>
+          </li>
+          <% end %>
+          <li class=<%= controller.controller_name == 'posts' ? 'active' : '' %>> <%= link_to('Blog', photographer.blog_url.blank? ? posts_url : photographer.blog_url) %>
+          </li>
+          <li class="divider-vertical"></li>
+          <li class=<%= controller.controller_name == 'contact_requests' ? 'active' : '' %>> <%= link_to('Contact', new_contact_request_url) %>
+          </li>
+        </ul>
+        <div class="pull-right">
+          <%= link_to(photographer.name, root_url, :class => 'brand') %>
         </div>
       </div>
     </div>
-    <%= render :partial => 'shared/footer' %>
-  </body>
+  </div>
+  <div class="outer">
+    <div class="container" id="content">
+      <% if notice %>
+      <div class="alert alert-block" data-dismiss="alert">
+        <a class="close">×</a>
+        <p>
+          <%= notice %>
+        </p>
+      </div>
+      <% end %>
+      <% if content_for?(:title) %>
+      <div class="page-header">
+        <h1>
+          <%= yield(:title) %>
+        </h1>
+        <% if content_for?(:subtitle) %>
+        <p class="subtitle">
+          <%= yield(:subtitle) %>
+        </p>
+        <% end %>
+      </div>
+      <% end %>
+      <div class="row content">
+        <% if content_for?(:sidebar) %>
+        <div class="span3">
+          <div class="well">
+            <%= yield(:sidebar) %>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+        <div class="span9">
+          <%= yield %>
+        </div>
+        <% else %>
+        <div class="span12">
+          <%= yield %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <%= render :partial => 'shared/footer' %>
+</body>
 </html>

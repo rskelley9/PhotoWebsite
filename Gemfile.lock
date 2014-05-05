@@ -34,6 +34,8 @@ GEM
     arel (3.0.2)
     awesome_print (1.1.0)
     bcrypt-ruby (3.1.1)
+    blueimp-gallery-rails (2.7.0)
+      railties (>= 3.0, < 5.0)
     builder (3.0.4)
     capistrano (2.15.5)
       highline
@@ -205,6 +207,7 @@ PLATFORMS
 DEPENDENCIES
   acts_as_list (~> 0.1)
   awesome_print
+  blueimp-gallery-rails
   capistrano
   coffee-rails (~> 3.2)
   daemons
