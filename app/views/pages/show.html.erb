@@ -1,0 +1,67 @@
+<% content_for :title, @page.name %>
+<%= image_tag(@page.image.url, :class => 'page-image') if @page.image_uid %>
+<%= @page.body.to_html.html_safe %>
+
+<% if @page.keywords.split(',').include?("pricing") %>
+<div class="container price-table">
+  <div class="row">
+    <div class="span3">
+      <div class="well">
+        <h2 class="muted">Wedding Package</h2>
+        <p><span class="label">POPULAR</span></p>
+        <ul>
+          <li>Portraits</li>
+          <li>Unlimited access</li>
+          <li>Afterparty Photos</li>
+          <li>Professional Design</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        <hr>
+        <h3>Starting at $499.99</h3>
+        <hr>
+        <p><a class="btn btn-large" href="#"><i class="icon-ok"></i>Request Service</a></p>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="well">
+        <h2 class="text-warning">Family/Maternity Package</h2>
+        <p><span class="label label-success">POPULAR</span></p>
+        <ul>
+          <li>Baby Pics</li>
+          <li>Family Portraits</li>
+          <li>We Come to You</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        <hr>
+        <h3>Starting at $499 for 10 Prints</h3>
+        <hr>
+        <p><a class="btn btn-success btn-large" href="#"><i class="icon-ok"></i> Request Service</a></p>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="well">
+        <h2 class="text-info">Fashion/Boudoir</h2>
+        <p><span class="label label-info">SALE</span></p>
+        <ul>
+          <li>All Equipment Provided</li>
+          <li>State-of-the-art Lighting</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+        <hr>
+        <h3>Contact for Pricing Information</h3>
+        <hr>
+        <p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Request Service</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<style>
+
+.price-table{
+  margin-left: 110px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+</style>
