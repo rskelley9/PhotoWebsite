@@ -8,9 +8,9 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <!-- start blueImp integration -->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+ <!--  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css"> -->
   <!--   end blueImp integration -->
 </head>
 <body></body>
@@ -43,62 +43,19 @@
         <%= yield %>
       </div>
       <!-- Start BlueImp Widget -->
-      <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-      <div id="blueimp-gallery" class="blueimp-gallery">
-        <!-- The container for the modal slides -->
-        <div class="slides"></div>
-        <!-- Controls for the borderless lightbox -->
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-        <!-- The modal dialog, which will be used to wrap the lightbox content -->
-        <div class="modal fade">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" aria-hidden="true">&times;</button>
-                <h4 class="modal-title"></h4>
-              </div>
-              <div class="modal-body next"></div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left prev">
-                  <i class="glyphicon glyphicon-chevron-left"></i>
-                  Previous
-                </button>
-                <button type="button" class="btn btn-primary next">
-                  Next
-                  <i class="glyphicon glyphicon-chevron-right"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End BlueImp Widget -->
-    </div>
-  </div>
-</div>
-<div class="container" id="footer">
-  <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
-</div>
-</html>
-<!-- Start BlueImp -->
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery">
+<!-- <div id="blueimp-gallery" class="blueimp-gallery"> -->
     <!-- The container for the modal slides -->
-    <div class="slides"></div>
+<!--     <div class="slides"></div> -->
     <!-- Controls for the borderless lightbox -->
-    <h3 class="title"></h3>
+<!--     <h3 class="title"></h3>
     <a class="prev">‹</a>
     <a class="next">›</a>
     <a class="close">×</a>
     <a class="play-pause"></a>
-    <ol class="indicator"></ol>
+    <ol class="indicator"></ol> -->
     <!-- The modal dialog, which will be used to wrap the lightbox content -->
-    <div class="modal fade">
+    <!-- <div class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -119,6 +76,12 @@
             </div>
         </div>
     </div>
+</div> -->
+      <!-- End BlueImp Widget -->
+    </div>
+  </div>
 </div>
-<script src="js/blueimp-gallery.min.js"></script>
-<!-- End BlueImp -->
+<div class="container" id="footer">
+  <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
+</div>
+</html>
