@@ -44,6 +44,8 @@ module Grokphoto
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    #webfonts
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
     config.assets.initialize_on_precompile = false  # Heroku compatibility
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

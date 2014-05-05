@@ -69,6 +69,8 @@ group :development, :test do
   # Database
   gem 'sqlite3'
 
+  gem "twitter-bootstrap-rails"
+
   # Rspec
   gem 'rspec-rails', '~> 2.7'
 end
