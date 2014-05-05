@@ -1,18 +1,18 @@
-# About this App
+## About this App
 
 This application is a photography website built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is designed with a customized Rails template.
 
-## GrokPhoto
+### GrokPhoto
 
 GrokPhoto is a professional photographer's client providing a CMS, and gallery solutions. Visit [Grokphoto.com](http://grokphoto.org/) for more information.
 
-## Devise
+### Devise
 
 Devise is a flexible authentication solution for Rails based on Warden. It is a Rack-based, complete MVC solution that employs a Rails engine. Devise allows you to have multiple models signed in at the same time and is focused on modularity.
 
 For more information on Devise and documentation, visit the [Devise Wiki](https://github.com/plataformatec/devise/wiki).
 
-## Software Requirements and Dependencies
+### Software Requirements and Dependencies
 
 * Rails 3.2+
 * ImageMagick
@@ -26,17 +26,17 @@ Initialize the database by running the following commands in your terminal:
     rake db:migrate
     rake db:seed
 
-## Initial Configuration
+### Initial Configuration
 
 1. Start your server: rails s
 2. Login to the admin panel ('/admin') using email: email@example.com and password: default
 3. Click on the Settings tab and enter your own information.
 
-## Blog
+### Blog Setup
 
 You may link your own blog through the Settings tab in the Admin Panel. If you leave it blank, Grokphoto provides a default Markdown posting system.
 
-## Post with Markdown
+### Post with Markdown
 
 Posts published via the Admin Panel can be formatted using Markdown. For documentation and syntax help, visit [DaringFireball.com](http://daringfireball.net/projects/markdown/syntax).
 
