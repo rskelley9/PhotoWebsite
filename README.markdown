@@ -29,7 +29,7 @@ Initialize the database by running the following commands in your terminal:
 ## Initial Configuration
 
 1. Start your server: rails s
-2. Login to the admin panel (/admin) using email: grok@grokphoto.org and password: password
+2. Login to the admin panel ('/admin') using email: email@example.com and password: default
 3. Click on the Settings tab and enter your own information.
 
 ## Blog

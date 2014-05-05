@@ -1,14 +1,14 @@
 # Creating photographer
 Photographer.create(
-  name: "Your Company Name",
-  meta_title: "Shows as the browser's title for the landing page.",
-  tagline: "Describe the services that you provide here.",
-  email: "grok@grokphoto.org",
-  password: "password",
+  name: "Stephen Hirschthal Photography",
+  meta_title: "Stephen Hirscthal Photography",
+  tagline: "Professional photography through a creative lens.",
+  email: "email@example.com",
+  password: "default",
   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  google_analytics_key: "UA-2450369-XX",
+  google_analytics_key: "UA-50501824-XX",
   time_zone: "Eastern Time (US & Canada)",
-  disqus_short_name: "grokphoto"
+  disqus_short_name: "SteveH"
 )
 
 # Creating galleries
@@ -32,8 +32,8 @@ Gallery.all.each do |gallery|
 end
 
 # Creating private galleries
-PrivateGallery.create!(name: 'Jane Smith Family Session', expires_on: 1.week.from_now)
-PrivateGallery.create!(name: 'Sue Jones Newborn Session', expires_on: 4.weeks.from_now)
+PrivateGallery.create!(name: 'Private Gallery Example', expires_on: 2.weeks.from_now)
+PrivateGallery.create!(name: 'Another Private Gallery Example', expires_on: 4.weeks.from_now)
 
 # Uploading private gallery images
 base_dir = Rails.root.join('creatives', 'private_galleries')
@@ -52,9 +52,9 @@ end
 
 # Creating pages
 Page.create(name: "About", image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-Page.create(name: "Pricing", image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+Page.create(name: "Pricing", image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "For more information on pricing, contact Stephen Hirscthal at 860-983-8120 or by email at Stephen.Hirschthal@gmail.com")
 
 # Creating posts
-Post.create(title: "Baby Stuey at One Week", keywords: 'baby, photography, newborns', image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-Post.create(title: "The Jones Family Portraits", keywords: 'family, photography, portrait, lifestyle', image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+Post.create(title: "This is Just an Example", keywords: 'photography, photo, wedding, fashion, model', image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+Post.create(title: "Example of Portrait Post", keywords: 'photography, portrait, lifestyle', image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 Post.create(title: "This is how we handle titles that are extraordinarily long.", image: File.new(Rails.root.join('creatives', 'pages', 'about.png')), body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")

@@ -6,7 +6,7 @@
   <p>The body is the main content of the post and you can use markdown to add some HTML flair.</p>
 <% end %>
 <%= render "shared/error_messages", :target => @post %>
-<%= form.input :title, :hint => 'Give your post a meaningful title. Like "Newborn Sessions October 2012"' %>
+<%= form.input :title, :hint => 'Give your post a meaningful title. Like "Wedding Gallery Features Photos of Sasquatch"' %>
 <%= form.input :image, :as => :file, :hint => 'You may upload an image to accompany the post.' %>
 <%= form.hidden_field :retained_image %>
 <%= link_to( image_tag(@post.image.thumb('100x100').url), @post.image.url, :rel => 'lightbox' ) if @post.image_uid %>
