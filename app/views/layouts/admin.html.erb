@@ -15,25 +15,19 @@
       <div class="container">
         <ul class="nav">
           <% if photographer_signed_in? %>
-            <li>
-              <%= :class => controller.controller_name == 'events' ? 'active' : '' = link_to 'Dashboard', admin_path %>
+            <li class=<%= controller.controller_name == 'events' ? 'active' : '' %>> <%= link_to 'Dashboard', admin_path %>
             </li>
-            <li>
-              <%= :class => controller.controller_name == 'private_galleries' ? 'active' : '' = link_to 'Private Galleries', admin_private_galleries_path %>
+            <li class=<%= controller.controller_name == 'private_galleries' ? 'active' : ''%>> <%=link_to 'Private Galleries', admin_private_galleries_path %>
             </li>
-            <li>
-              <%= :class => controller.controller_name == 'galleries' ? 'active' : '' = link_to 'Galleries', admin_galleries_path %>
+            <li class=<%= controller.controller_name == 'galleries' ? 'active' : ''%>> <%= link_to 'Galleries', admin_galleries_path %>
             </li>
-            <li>
-              <%= :class => controller.controller_name == 'pages' ? 'active' : '' = link_to 'Pages', admin_pages_path %>
+            <li class=<%= controller.controller_name == 'pages' ? 'active' : ''%>> <%=link_to 'Pages', admin_pages_path %>
             </li>
             <% if photographer.blog_url.blank? %>
-              <li>
-                <%= :class => controller.controller_name == 'posts' ? 'active' : '' = link_to 'Posts', admin_posts_path %>
+              <li class=<%= controller.controller_name == 'posts' ? 'active' : '' %>> <%= link_to 'Posts', admin_posts_path %>
               </li>
             <% end %>
-            <li>
-              <%= :class => controller.controller_name == 'photographers' ? 'active' : '' = link_to 'Settings', edit_admin_photographer_path %>
+            <li class=<%= controller.controller_name == 'photographers' ? 'active' : '' %>> <%= link_to 'Settings', edit_admin_photographer_path %>
             </li>
             <li class="divider-vertical"></li>
             <li>
