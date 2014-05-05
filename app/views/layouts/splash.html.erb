@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+  <head>
+    <meta content="<%= photographer.google_verification %>" name="google-site-verification"/>
+    <title>
+      <%= @meta_title %>
+    </title>
+    <% unless @keywords.blank? %>
+      <meta content="<%= @keywords %>" name="keywords"/>
+    <% end %>
+    <% unless @meta_description.blank? %>
+      <meta content="<%= @meta_description %>" name="description"/>
+    <% end %>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="container" id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <%= render :partial => 'shared/footer' %>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+  <head>
+    <title>
+      <%= "#{yield(:title).presence || 'Home'}  | #{photographer.name} Administration" %>
+    </title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+    <%= yield(:meta) %>
+  </head>
+  <body class="admin"></body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <% if photographer_signed_in? %>
+            <li class=<%= controller.controller_name == 'events' ? 'active' : '' %>> <%= link_to 'Dashboard', admin_path %>
+            </li>
+            <li class=<%= controller.controller_name == 'private_galleries' ? 'active' : ''%>> <%=link_to 'Private Galleries', admin_private_galleries_path %>
+            </li>
+            <li class=<%= controller.controller_name == 'galleries' ? 'active' : ''%>> <%= link_to 'Galleries', admin_galleries_path %>
+            </li>
+            <li class=<%= controller.controller_name == 'pages' ? 'active' : ''%>> <%=link_to 'Pages', admin_pages_path %>
+            </li>
+            <% if photographer.blog_url.blank? %>
+              <li class=<%= controller.controller_name == 'posts' ? 'active' : '' %>> <%= link_to 'Posts', admin_posts_path %>
+              </li>
+            <% end %>
+            <li class=<%= controller.controller_name == 'photographers' ? 'active' : '' %>> <%= link_to 'Settings', edit_admin_photographer_path %>
+            </li>
+            <li class="divider-vertical"></li>
+            <li>
+              <%= link_to 'Logout', destroy_photographer_session_path, :method => :delete %>
+            </li>
+          <% end %>
+        </ul>
+        <div class="pull-right">
+          <%= link_to('SHP Admin Panel', admin_path, :class => 'brand') %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <% if notice %>
+      <div class="alert alert-block" data-dismiss="alert">
+        <a class="close">×</a>
+        <p>
+          <%= notice %>
+        </p>
+      </div>
+    <% end %>
+    <div class="page-header">
+      <h1>
+        <%= yield(:title).presence || 'Home' %>
+      </h1>
+    </div>
+    <div class="row">
+      <% if content_for?(:sidebar) %>
+        <div class="span3">
+          <div class="well">
+            <h2>Instructions</h2>
+            <%= yield(:sidebar) %>
+            <p> </p>
+            <p> </p>
+          </div>
+        </div>
+        <div class="span9">
+          <%= yield %>
+        </div>
+      <% else %>
+        <div class="span12">
+          <%= yield %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="container" id="footer">
+    © #{link_to('Ryan Kelley', 'http://www.ryanskelley.com', :target => '_blank')}, #{Time.now.year}. All Rights Reserved.
+  </div>
+</html>
