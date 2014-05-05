@@ -1,6 +1,8 @@
 ## About this App
 
-This application is a photography website built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is designed with a customized Rails template.
+This application is a complete photography website, built with CMS and administrator functionality for adding photo, text and video content. It also includes a modest booking system, and its admin interface makes integrating a marketing platform relatively simple.  
+
+This application was built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is designed with a customized Rails template.
 
 ### GrokPhoto
 
@@ -40,6 +42,9 @@ You may link your own blog through the Settings tab in the Admin Panel. If you l
 
 Posts published via the Admin Panel can be formatted using Markdown. For documentation and syntax help, visit [DaringFireball.com](http://daringfireball.net/projects/markdown/syntax).
 
+## Notice
+
+Most of the view templates are written in HAML, however there is a branch dedicated to converting the views to ERB to help encourage front-end design without excluding contributors not familiar with Ruby.
 
 ## Heroku Deployment
 
