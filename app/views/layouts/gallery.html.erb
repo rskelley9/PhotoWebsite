@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="no-js" lang="en">
+  <head>
+    <title>
+      <%= @meta_title %>
+    </title>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body></body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="pull-right">
+          <%= "#{yield(:page_title).presence || 'Private Gallery'} | #{photographer.name}" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="outer">
+    <div class="container" id="content">
+      <% if notice %>
+        <div class="alert alert-block" data-dismiss="alert">
+          <a class="close">×</a>
+          <p>
+            <%= notice %>
+          </p>
+        </div>
+      <% end %>
+      <div class="page-header">
+        <h1>
+          <%= yield(:title).presence || 'Home' %>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="footer">
+    <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
+  </div>
+</html>
