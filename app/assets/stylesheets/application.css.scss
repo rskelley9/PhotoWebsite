@@ -30,17 +30,22 @@ footer .container .row {
 
 }
 
+// navbar logo color
 a.brand{
   font-family: 'Pacifico';
   background-color: black;
 }
 
+
+//front page heading and jumbotrong
 div.jumbotron.masthead{
 
 }
 
+
+//sidebar indent
 body .outer{
-  margin-left:100px;
+  // margin-left:100px;
 }
 
 body.admin {
@@ -90,6 +95,7 @@ h1 {
     line-height: 1;
   }
 }
+
 
 #carousel {
   height: 500px;
