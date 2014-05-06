@@ -16,11 +16,10 @@ gem 'haml', '~> 3.1'
 # Authentication
 gem 'devise', '~> 1.5'
 
-gem 'blueimp-gallery-rails'
+# gem 'blueimp-gallery-rails'
 
-gem 'sprockets-rails', '=2.0.0.backport1'
-gem 'sprockets', '=2.2.2.backport2'
-gem 'sass-rails', github: 'guilleiguaran/sass-rails', branch: 'backport'
+gem 'sprockets', '2.2.2.backport2'
+gem 'sprockets-rails', '2.0.0.backport1'
 
 # Responders
 gem 'responders', '~> 0.9'
