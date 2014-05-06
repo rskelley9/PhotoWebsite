@@ -16,7 +16,7 @@
                                     <!-- Carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/770x300&text=one"></div>
+                                        <img src=<%= @page.image.url %>></div>
 
                                         <div class="item" data-slide-number="1">
                                         <img src="http://placehold.it/770x300&text=two"></div>
@@ -86,7 +86,7 @@
 
                         <ul class="thumbnails">
                             <li class="span2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                                <a class="thumbnail" id="carousel-selector-0"><img src=<%= @page.image.url%>></a>
                             </li>
 
                             <li class="span2">
@@ -178,7 +178,18 @@
 }
 
 .carousel-control{
-margin-top: 100px;
+
+top: 125px;
+}
+
+.carousel {
+  max-height: 240px;
+  overflow: hidden;
+
+  .item {
+    width: 100%;
+   height:100%;
+  }
 }
 </style>
 
