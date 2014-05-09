@@ -1,0 +1,61 @@
+<% content_for :title, "Request Appointment with #{photographer.name}" %>
+<% content_for :sidebar do %>
+<h2>Photography Service Inquiry</h2>
+<p>
+  Please leave me your name, email, and a brief description about the type of photography session/service you are interested in. Please also include your preferred time frame, location and/or other relevant information as well as any questions you may have. You will hear back asap (usually within 24 hours) with pricing, availability, and answers to all your questions. For more urgent requests, please call <b>860-983-8120</b>.
+</p>
+<% end %>
+<%= simple_form_for(@service_request, :url => service_requests_path, :html => { :class => 'form-vertical' }) do |form| %>
+<%= render "shared/error_messages", :target => @service_request %>
+<%= form.input :name, :hint => 'Your name' %>
+<%= form.input :email, :hint => 'Your email address so I can get back to you.' %>
+<%= form.input :phone, :hint => 'Your preferred contact phone number.' %>
+<%= form.input :day, :label => 'Preferred Phone Time of Day', as: :boolean, checked_value: false, unchecked_value: true  %>
+
+<%= form.input :address, :hint => 'Please enter the street address of the photography session/appointment.', required: false %>
+<%= form.input :state, :hint => 'What state will you/your requested service be located in? Please note that Stephen is located in Connecticut and serves New England and the Mid-Atlantic region.', required: false %>
+<%= form.input :message, :label => 'The description of the service you are requesting. What type of photography are you looking for? What is your timeframe?. Please include any other relevant information', :input_html => { :class => 'medium' } %>
+<div class="form-actions">
+  <%= form.button :submit, 'Send Request', :class => 'btn btn-primary' %>
+</div>
+<% end %>
+
+<style>
+
+.string .optional{
+  Height: 30px;
+}
+
+label.string.optional{
+  font-size: 14px;
+}
+
+label.email.required{
+  font-size: 14px;
+}
+
+#service_request_email{
+  Height: 30px;
+}
+
+#service_request_phone{
+  Height: 30px;
+}
+
+label.boolean.optional.control-label{
+  Height:10px;
+  margin-top:15px;
+}
+
+label.checkbox{
+  margin-bottom:15px;
+
+}
+
+label.checkbox:before{
+  content: "Check this box if you prefer Stephen phones you in the evening.";
+  font-style:italic;
+  font-weight:200;
+}
+
+</style>

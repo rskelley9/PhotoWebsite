@@ -1,5 +1,11 @@
 Grokphoto::Application.routes.draw do
 
+  # get "service_requests/new"
+
+  # get "service_requests/create"
+
+  # get "service_requests/thanks"
+
   root :to => "home#index"
   match 'timestamp' => 'home#timestamp' # used to keep passenger spooled up in prod
   match 'sitemap' => 'home#sitemap'
@@ -10,6 +16,9 @@ Grokphoto::Application.routes.draw do
   resources :pages, :only => :show
   resources :posts, :only => [:index, :show]
   resources :contact_requests, :only => [:new, :create] do
+    get :thanks, :on => :collection
+  end
+  resources :service_requests, :only => [:new, :create] do
     get :thanks, :on => :collection
   end
 
