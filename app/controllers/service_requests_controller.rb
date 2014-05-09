@@ -22,4 +22,5 @@ class ServiceRequestsController < ApplicationController
 
   def thanks
   end
+
 end

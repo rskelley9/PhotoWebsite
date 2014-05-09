@@ -10,7 +10,7 @@
 <%= form.input :name, :hint => 'Your name' %>
 <%= form.input :email, :hint => 'Your email address so I can get back to you.' %>
 <%= form.input :phone, :hint => 'Your preferred contact phone number.' %>
-<%= form.input :day, :label => 'Check this box if you prefer Stephen phones you in the evening.', as: :boolean, checked_value: false, unchecked_value: true  %>
+<%= form.input :day, :label => 'Preferred Phone Time of Day', as: :boolean, checked_value: false, unchecked_value: true  %>
 
 <%= form.input :address, :hint => 'Please enter the street address of the photography session/appointment.', required: false %>
 <%= form.input :state, :hint => 'What state will you/your requested service be located in? Please note that Stephen is located in Connecticut and serves New England and the Mid-Atlantic region.', required: false %>
@@ -34,8 +34,28 @@ label.email.required{
   font-size: 14px;
 }
 
-#contact_request_email{
+#service_request_email{
   Height: 30px;
+}
+
+#service_request_phone{
+  Height: 30px;
+}
+
+label.boolean.optional.control-label{
+  Height:10px;
+  margin-top:15px;
+}
+
+label.checkbox{
+  margin-bottom:15px;
+
+}
+
+label.checkbox:before{
+  content: "Check this box if you prefer Stephen phones you in the evening.";
+  font-style:italic;
+  font-weight:200;
 }
 
 </style>
