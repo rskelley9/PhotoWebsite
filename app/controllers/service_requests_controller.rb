@@ -1,5 +1,5 @@
 class ServiceRequestsController < ApplicationController
-
+  respond_to :html
   def new
     @meta_title = "Request Appointment from #{photographer.name}"
     respond_with( @service_request = ServiceRequest.new )
