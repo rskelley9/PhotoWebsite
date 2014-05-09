@@ -12,8 +12,8 @@ class ServiceRequest < ActiveRecord::Base
   scope :unread, where(:read => false)
   scope :read, where(:read => true)
 
-  scope :night, where(:day => false)
-  scope :day, where(:day => true)
+  # scope :night, where(:day => false)
+  # scope :day, where(:day => true)
 
 
   # Logging
