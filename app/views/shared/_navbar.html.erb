@@ -9,6 +9,9 @@
             <li class=<%= (defined?(@gallery) and @gallery.id == gallery.id ? 'active' : '')%>> <%=link_to(gallery.name,gallery_url(gallery)) %>
             </li>
             <% end %>
+            <li>
+              <%= link_to("All", '/galleries') %>
+            </li>
           </ul>
         </li>
         <% pages.each do |page| %>
