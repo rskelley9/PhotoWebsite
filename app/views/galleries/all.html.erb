@@ -1,0 +1,28 @@
+<% content_for :title, "All Photos" %>
+<div class="gallery-body">
+  <!--  Todo add body -->
+  <br/>
+</div>
+<ul class="thumbnails">
+  <% @galleries.each do |gallery| %>
+  <% gallery.photos.each do |photo| %>
+  <li class="span3">
+    <%= link_to(image_tag(photo.photo.thumb('260x173#').url, :size => '260x173', :alt => photo.name), photo.photo.url, :class => "thumbnail", :rel => 'lightbox') %>
+  </li>
+  <% end %>
+  <% end %>
+</ul>
+
+
+<style>
+
+p{
+  font-family:Varela-Round, sans-serif;
+  font-size: 16px;
+}
+
+h1{
+  /*  font-family: Varela-Round, sans-serif;*/
+}
+
+</style>
