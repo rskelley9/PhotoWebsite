@@ -4,6 +4,7 @@
 //= require jquery.fancybox-1.3.4
 //= require chosen
 //= require index
+//= require land
 
 @mixin clearfix {
 &:after {
@@ -24,10 +25,6 @@ margin-left: 5%;
 
 body {
 background-color: #252525 !important;
-}
-
-footer .container .row {
-
 }
 
 // navbar logo color

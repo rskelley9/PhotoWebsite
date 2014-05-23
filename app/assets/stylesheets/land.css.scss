@@ -22,12 +22,20 @@
   font-weight: 700;
   src: url(../fonts/gandhi-bold-serif.ttf), url(../fonts/gandhi-bold-serif.eot);
 }
-body {
-  background-color: #f0f0f0;
+
+.outer{
+  padding:0px !important;
 }
+
+.background-pic {
+  background-color: #f0f0f0;
+  background-image: url(image-path('penny.jpg'));
+}
+
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "gandhi sans", helvetica, sans-serif;
 }
+
 form {
   font-family: helvetica, sans-serif;
 }

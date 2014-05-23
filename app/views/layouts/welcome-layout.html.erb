@@ -15,18 +15,17 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-  <link href="land.css" rel="stylesheet">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 </head>
 
 <body>
-  <%= render :partial => 'shared/navbar' %>
+<!--   <%= render :partial => 'shared/navbar' %> -->
   <div class="outer">
-    <div class="container" id="content">
+   <!--  <div class="container" id="content"> -->
       <%= yield %>
     </div>
   </div>
-  <%= render :partial => 'shared/footer' %>
+<!--   <%= render :partial => 'shared/footer' %> -->
 </body>
 
 </html>
