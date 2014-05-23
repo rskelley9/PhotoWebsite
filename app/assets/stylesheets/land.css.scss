@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "gandhi sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/gandhi-sans.ttf), url(../fonts/gandhi-serif.eot);
+}
+@font-face {
+  font-family: "gandhi sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/gandhi-bold-sans.ttf), url(../fonts/gandhi-bold-sans.eot);
+}
+@font-face {
+  font-family: "gandhi serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/gandhi-serif.ttf), url(../fonts/gandhi-serif.eot);
+}
+@font-face {
+  font-family: "gandhi serif";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/gandhi-bold-serif.ttf), url(../fonts/gandhi-bold-serif.eot);
+}
+
+.outer{
+  padding:0px !important;
+}
+
+.background-pic {
+  background-color: #f0f0f0;
+  background-image: url(image-path('penny.jpg'));
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "gandhi sans", helvetica, sans-serif;
+}
+
+form {
+  font-family: helvetica, sans-serif;
+}
+#logo {
+  color: #000;
+  display: block;
+  font-family: "gandhi serif", georgia, serif;
+  font-weight: bold;
+  font-size: 2.8em;
+  font-style: italic;
+  margin-top: 4em;
+}
+h1 {
+  font-weight: normal;
+  font-size: 2.8em;
+  line-height: 1em;
+  margin: 1em 0 0;
+}
+h2 {
+  color: #999;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0.5em 0 2.8em;
+}
+#links {
+  line-height: 1.5em;
+  margin-top: 1.25em;
+}
+#links a {
+  color: #333;
+  white-space: nowrap;
+}
+#links a .glyphicon {
+  margin-right: 0.2em;
+}
+#links a:hover {
+  color: #2A6496;
+  text-decoration: none;
+}
+#links .separator {
+  margin: 0 0.5em;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  #logo {
+    margin-top: 1em;
+  }
+}
