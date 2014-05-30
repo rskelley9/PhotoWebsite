@@ -1,0 +1,29 @@
+  .push-left{
+    margin-right: 1%;
+  }
+
+  #center-me{
+    width: 100%;
+    text-align:center;
+  }
+  .stick-to-bottom{
+    margin-bottom: 1%;
+    position: fixed; bottom: 0;
+  }
+
+  .welcome-link{
+   color: #000000;
+ }
+
+ .welcome-link:hover, .welcome-link:focus{
+  color: #2A6496;
+}
+
+#welcome-enter{
+  font-family: pacifico;
+  font-size: 30px;
+}
+
+#welcome-button-div{
+margin-top: 25px;
+}
