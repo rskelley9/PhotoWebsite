@@ -122,4 +122,4 @@ To run the tests:
 
 Grokphoto application and Heroku deployment documentation by [GrokPhoto](https://github.com/rapind/grokphoto).
 
-Sample photos were provided by and are copyright of Jaime Coyle Photography [http://jaimecoyle.com](http://jaimecoyle.com)
+Sample photos were provided by and are copyright of Stephen Hirschthal Photography (http://www.SHProPhoto.com)[www.shprophoto.com] and Jaime Coyle Photography [http://jaimecoyle.com](http://jaimecoyle.com).
