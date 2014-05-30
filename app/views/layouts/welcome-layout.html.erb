@@ -23,4 +23,28 @@
       <%= yield %>
 </body>
 <%= render "/shared/small-foot" %>
+<script>
+  $(document).ready(function(){
+
+  // To attach Backstrech as the body's background
+  // $.backstretch("path/to/image.jpg");
+
+  // You may also attach Backstretch to a block-level element
+  // $(".foo").backstretch("path/to/image.jpg");
+
+  // Or, to start a slideshow, just pass in an array of images
+  // $(".background-pic").backstretch([
+  //   "assets/penny.jpg",
+  //   "assets/car.jpg",
+  //   "assets/truck.jpg"
+  //   "assets/fox.jpg"
+  // ], {duration: 4000});
+   $.backstretch([
+      "assets/penny.jpg"
+    ,  "assets/car.jpg"
+    , "assets/fox.jpg"
+    , "assets/truck.jpg"
+  ], {duration: 3000, fade: 750});
+  });
+</script>
 </html>

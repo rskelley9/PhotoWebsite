@@ -16,6 +16,8 @@ gem 'haml', '~> 3.1'
 # Authentication
 gem 'devise', '~> 1.5'
 
+gem 'backstretch-rails'
+
 # gem 'blueimp-gallery-rails'
 
 gem 'sprockets', '2.2.2.backport2'
