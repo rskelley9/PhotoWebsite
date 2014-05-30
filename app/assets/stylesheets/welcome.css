@@ -16,6 +16,10 @@
    color: #000000;
  }
 
+ .welcome-title{
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
+ }
+
  .welcome-link:hover, .welcome-link:focus{
   color: #2A6496;
 }
@@ -26,13 +30,15 @@
   background: transparent;
   border-color: transparent;
   color: #ffffff
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
 }
 
 #welcome-enter:hover{
   font-family: pacifico;
   font-size: 36px;
   color: #000000;
-  border-color: #000000;
+/*  border-color: #000000;*/
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
 }
 
 
@@ -41,7 +47,7 @@ margin-top: 25px;
 }
 
 #links p{
-  font-size: 16px;
+  font-size: 20px;
 font-family: pacifico;
 margin-bottom: 20px;
 }
