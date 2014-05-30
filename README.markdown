@@ -2,7 +2,7 @@
 
 This application is a complete photography website, built with CMS and administrator functionality for adding photo, text and video content. It also includes a modest booking system, and its admin interface makes integrating a marketing platform relatively simple.  
 
-This application was built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is designed with a customized Rails template.
+This application was built with [Grokphoto.com](http://grokphoto.org/) and the [Devise](https://github.com/plataformatec/devise/tree/v3.2) engine. The user interface is a custom design, but can easily be overwritten.
 
 ### GrokPhoto
 
@@ -20,9 +20,14 @@ For more information on Devise and documentation, visit the [Devise Wiki](https:
 
 ### Software Requirements and Dependencies
 
-* Rails 3.2+
+* Rails 3.2.11
 * ImageMagick
 * SQLite3 or MySQL or PostgreSQL
+* Bootstrap 2.3.2
+* JQuery-Rails 1.0
+* JQuery-UI 1.8.16
+* Devise 1.5
+* Backstretch
 
 ## Getting Started
 
@@ -48,7 +53,7 @@ Posts published via the Admin Panel can be formatted using Markdown. For documen
 
 ## Notice
 
-Most of the view templates are written in HAML, however there is a branch dedicated to converting the views to ERB to help encourage front-end design without excluding contributors not familiar with Ruby.
+Most of the view templates realeased with GrokPhoto are written in HAML, however many of the added templates have been written in ERB. To easily convert a template from HAML to ERB or vice versa, try [haml2erb.herokuapp.com](http://haml2erb.herokuapp.com/).
 
 ## Heroku Deployment
 
