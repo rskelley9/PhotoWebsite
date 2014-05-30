@@ -11,5 +11,6 @@
 #= require jquery-ui-1.8.16.custom
 #= require jquery.fancybox-1.3.4
 #= require chosen.jquery
+#= require 'jquery.backstretch'
 #= require misc
 #= require_tree .

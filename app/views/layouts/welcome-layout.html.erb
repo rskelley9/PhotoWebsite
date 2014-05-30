@@ -15,17 +15,22 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
   <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 </head>
+<%= render "/shared/navbar" %>
+<body class="background-pic">
 
-<body>
-<!--   <%= render :partial => 'shared/navbar' %> -->
-  <div class="outer">
-   <!--  <div class="container" id="content"> -->
       <%= yield %>
-    </div>
-  </div>
-<!--   <%= render :partial => 'shared/footer' %> -->
 </body>
+<%= render "/shared/small-foot" %>
+<script>
+  $(document).ready(function(){
 
+   $.backstretch([
+      "assets/penny.jpg"
+    ,  "assets/car.jpg"
+    , "assets/fox.jpg"
+    , "assets/truck.jpg"
+  ], {duration: 3000, fade: 750});
+  });
+</script>
 </html>

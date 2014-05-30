@@ -1,0 +1,16 @@
+  <div id="footer-floor" class="stick-to-bottom">
+    <div class="container">
+      <div class="row push-left">
+        <h4 id="center-me">
+          <% unless photographer.phone.blank? %>
+          <%= photographer.phone %>
+          |
+          <% end %>
+          <%= mail_to(photographer.email, photographer.email, class: "welcome-link", :encode => 'javascript').html_safe %>
+          |
+          <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
+        </h4>
+      </div>
+    </div>
+  </div>
+
