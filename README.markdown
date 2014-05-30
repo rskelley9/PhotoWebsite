@@ -8,6 +8,10 @@ This application was built with [Grokphoto.com](http://grokphoto.org/) and the [
 
 GrokPhoto is a professional photographer's client providing a CMS, and gallery solutions. Visit [Grokphoto.com](http://grokphoto.org/) for more information.
 
+### Landing Page with Backstretch JS
+
+Landing page is located at app/views/home/welcome-page.html.erb and layout at app/views/layouts/welcome-layout.html.erb. The background is set as a slideshow with Backstretch JQuery script located in the layout file. More options for configuring [Backstretch](http://srobbin.com/jquery-plugins/backstretch/).
+
 ### Devise
 
 Devise is a flexible authentication solution for Rails based on Warden. It is a Rack-based, complete MVC solution that employs a Rails engine. Devise allows you to have multiple models signed in at the same time and is focused on modularity.
