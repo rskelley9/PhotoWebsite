@@ -6,6 +6,7 @@
     width: 100%;
     text-align:center;
   }
+
   .stick-to-bottom{
     margin-bottom: 1%;
     position: fixed; bottom: 0;
@@ -22,8 +23,25 @@
 #welcome-enter{
   font-family: pacifico;
   font-size: 30px;
+  background: transparent;
+  border-color: transparent;
+  color: #ffffff
 }
+
+#welcome-enter:hover{
+  font-family: pacifico;
+  font-size: 36px;
+  color: #000000;
+  border-color: #000000;
+}
+
 
 #welcome-button-div{
 margin-top: 25px;
+}
+
+#links p{
+  font-size: 16px;
+font-family: pacifico;
+margin-bottom: 20px;
 }
