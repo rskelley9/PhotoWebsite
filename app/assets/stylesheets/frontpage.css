@@ -49,6 +49,10 @@
   font-family: "Varela Round";
 }
 
+.marketing h2.gallery-name a.marketing-link{
+  color: #2c3e50;
+}
+
 .gal-description{
   text-indent:5px;
   padding: 10px;
