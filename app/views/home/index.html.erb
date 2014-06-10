@@ -24,7 +24,7 @@
 </div> -->
 <!-- end alternate navbar -->
 
- <%= render :partial => 'shared/navbar' %>
+<%= render :partial => 'shared/navbar' %>
 
 
 <!-- end dropdown navbar -->
@@ -57,17 +57,67 @@
   <div class="row">
     <% galleries.each do |gallery| %>
     <div class="span4">
-      <h2>
-        <%= link_to(gallery.name, gallery_path(gallery), :class => 'marketing-link') %>
-      </h2>
-      <p>
-        <%= gallery.description %>
-      </p>
-      <p>
-        <%= link_to('View this gallery &raquo;'.html_safe, gallery_url(gallery), :class => 'btn') %>
-      </p>
+      <div class="thumbnail">
+        <h2 class="gallery-name">
+          <%= link_to(gallery.name, gallery_path(gallery), :class => 'marketing-link') %>
+        </h2>
+        <div class="content">
+          <p class="gal-description">
+            <%= gallery.description %>
+          </p>
+          <p class="gal-button-row">
+            <%= link_to('View this gallery &raquo;'.html_safe, gallery_url(gallery), :class => 'btn gal-button') %>
+          </p>
+        </div>
+      </div>
     </div>
+    <!--   </div> -->
     <% end %>
   </div>
   <% end %>
 </div>
+<style>
+.thumbnail {
+  position: relative;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+.gallery-name {
+  background-color: #ecf0f1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  font-family: yellowtail;
+  text-indent: 5px;
+}
+
+.gallery-name .content{
+  text-indent: 5px;
+}
+
+.gal-button-row{
+  text-align: center;
+}
+
+.gal-button:hover{
+  color:#18bc9c;
+}
+
+.thumbnail .content{
+  min-height: 170px;
+}
+
+.thumbnail .content p{
+  font-family: "Varela Round";
+}
+
+.gal-description{
+  text-indent:5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+</style>

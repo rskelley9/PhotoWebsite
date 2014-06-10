@@ -1,6 +1,7 @@
-.marketing.row{
+.marketing .row{
   width: 1000px;
-  margin: 0 auto;
+ /* margin: 0 auto;*/
+  margin-left: 25px;
 }
 
 #tagline-info p{
