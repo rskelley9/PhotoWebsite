@@ -1,0 +1,71 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span12" id="foot-content">
+        <div class="row">
+          <div class="span2">
+            <h4>Photo Galleries</h4>
+            <ul class="unstyled">
+              <% galleries.each do |gallery| %>
+                <li>
+                  <%= link_to(truncate(gallery.name, :length => 32), gallery_url(gallery)) %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="span2">
+            <h4>Company Info</h4>
+            <ul class="unstyled">
+              <% pages.each do |page| %>
+                <li>
+                  <%= link_to(truncate(page.name, :length => 32), page_url(page)) %>
+                </li>
+              <% end %>
+              <li>
+                <%= link_to('Contact', new_contact_request_url) %>
+              </li>
+            </ul>
+          </div>
+          <div class="span3">
+            <% if photographer.blog_url.blank? %>
+              <h4>Recent Posts</h4>
+              <ul class="unstyled">
+                <% recent_posts.each do |post| %>
+                  <li>
+                    <%= link_to(truncate(post.title, :length => 32), post_url(post)) %>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
+          </div>
+          <div class="span7 pull-right" id="tagline-info">
+            <p>
+              <%= photographer.description %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-floor">
+    <div class="container">
+      <div class="row">
+        <div class="span12" id="foot-sole">
+          <h4>
+            <% unless photographer.phone.blank? %>
+              <%= photographer.phone %>
+              \/
+            <% end %>
+            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+          </h4>
+          <p>
+            <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<% unless photographer.google_analytics_key.blank? %>
+  <%= render :partial => 'shared/google_analytics', :locals => { :key => photographer.google_analytics_key } %>
+<% end %>

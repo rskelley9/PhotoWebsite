@@ -1,0 +1,19 @@
+.marketing.row{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#foot-content.span12{
+  width: 100% !important;
+}
+
+#tagline-info p{
+  margin-top: 15px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#foot-heel{
+  margin: 0 auto;
+  text-align: right;
+}
