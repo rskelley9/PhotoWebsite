@@ -24,3 +24,8 @@ footer h4{
   font-family: Yellowtail;
   font-size: 20px;
 }
+
+#foot-sole h4{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}

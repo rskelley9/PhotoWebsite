@@ -65,7 +65,7 @@
   background-color: #ecf0f1;
 }
 
-.jumbotron .masthead{
+.jumbotron.masthead{
   margin-top: 70px;
 }
 
@@ -81,5 +81,14 @@
   color: #18bc9c !important;
 }
 
+panel .panel-primary {
+  border: none;
+}
 
+.span12.front-carousel-container{
+  float: inherit;
+}
 
+.front-carousel-container #carousel.carousel{
+height: 400px;
+}
