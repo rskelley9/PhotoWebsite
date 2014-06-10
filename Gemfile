@@ -16,6 +16,7 @@ gem 'haml', '~> 3.1'
 # Authentication
 gem 'devise', '~> 1.5'
 
+# Background Slide for Welcome Page
 gem 'backstretch-rails'
 
 # gem 'blueimp-gallery-rails'

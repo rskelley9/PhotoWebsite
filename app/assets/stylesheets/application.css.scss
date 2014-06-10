@@ -6,6 +6,8 @@
 //= require index
 //= require land
 //= require welcome
+//= require frontpage
+//= require footer
 //= require override
 
 @mixin clearfix {
@@ -16,14 +18,13 @@ clear: both;
 }
 }
 
-@import url(http://fonts.googleapis.com/css?family=Varela+Round|Pacifico);
-
+@import url(http://fonts.googleapis.com/css?family=Varela+Round|Yellowtail);
 
 .marketing {
 margin-left: 5%;
 }
 
-.front-heading h1 { font-family: 'Pacifico', cursive; }
+.front-heading h1 { font-family: 'Yellowtail', cursive; }
 
 body {
 background-color: #252525 !important;
@@ -31,7 +32,7 @@ background-color: #252525 !important;
 
 // navbar logo color
 a.brand{
-font-family: 'Pacifico';
+font-family: 'Yellowtail';
 background-color: black;
 }
 
