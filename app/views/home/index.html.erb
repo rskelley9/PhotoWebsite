@@ -24,7 +24,7 @@
 </div> -->
 <!-- end alternate navbar -->
 
- <%= render :partial => 'shared/navbar' %>
+<%= render :partial => 'shared/navbar' %>
 
 
 <!-- end dropdown navbar -->
@@ -52,22 +52,34 @@
     </div>
   </div>
 </div>
-<div class="marketing">
-  <% galleries.each_slice(3) do |galleries| %>
-  <div class="row">
-    <% galleries.each do |gallery| %>
-    <div class="span4">
-      <h2>
-        <%= link_to(gallery.name, gallery_path(gallery), :class => 'marketing-link') %>
-      </h2>
-      <p>
-        <%= gallery.description %>
-      </p>
-      <p>
-        <%= link_to('View this gallery &raquo;'.html_safe, gallery_url(gallery), :class => 'btn') %>
-      </p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h1>Portfolio</h1>
+  </div>
+  <div class="panel-body">
+  <div class="marketing">
+    <% galleries.each_slice(3) do |galleries| %>
+    <div class="row">
+      <% galleries.each do |gallery| %>
+      <div class="span4">
+        <div class="thumbnail">
+          <h2 class="gallery-name">
+            <%= link_to(gallery.name, gallery_path(gallery), :class => 'marketing-link') %>
+          </h2>
+          <div class="content">
+            <p class="gal-description">
+              <%= gallery.description %>
+            </p>
+            <p class="gal-button-row">
+              <%= link_to('View this gallery &raquo;'.html_safe, gallery_url(gallery), :class => 'btn gal-button') %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <% end %>
     </div>
     <% end %>
-  </div>
-  <% end %>
+    <div> <!-- end panel-body -->
+  </div> <!-- end panel panel-primary -->
+</div>
 </div>
