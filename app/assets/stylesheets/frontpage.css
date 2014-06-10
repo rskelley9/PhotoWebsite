@@ -1,6 +1,6 @@
 .marketing .row{
   width: 1000px;
- /* margin: 0 auto;*/
+  /* margin: 0 auto;*/
   margin-left: 25px;
 }
 
@@ -33,10 +33,12 @@
 
 .gal-button-row{
   text-align: center;
+  margin-top: 10px;
 }
 
 .gal-button:hover{
-  color:#18bc9c;
+  color: #18bc9c !important;
+  background-color: !important #ecf0f1;
 }
 
 .thumbnail .content{
@@ -51,3 +53,31 @@
   text-indent:5px;
   padding: 10px;
   font-size: 14px;
+  padding-bottom:20px;
+}
+
+.panel-heading h1{
+  font-size: 42px;
+  font-family: 'Yellowtail';
+}
+
+.panel-body{
+  background-color: #ecf0f1;
+}
+
+.jumbotron .masthead{
+  margin-top: 70px;
+}
+
+.navbar-inner{
+  background: #2c3e50;
+}
+
+.navbar-inner ul li a{
+  color: #ecf0f1 !important;
+}
+
+.navbar-inner ul li a:hover{
+  color: #18bc9c !important;
+}
+
