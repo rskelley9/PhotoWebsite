@@ -1,0 +1,16 @@
+#carousel{
+  margin-left: 20%;
+}
+
+#carousel {
+  height: 500px;
+  .carousel-control {
+    top: 47%;
+    width: 0%;
+    opacity: 0;
+  }
+}
+
+.carousel-control:hover {
+  opacity: 0.9;
+}
