@@ -13,8 +13,8 @@
 <%= form.input :day, :label => 'Preferred Phone Time of Day', as: :boolean, checked_value: false, unchecked_value: true  %>
 
 <%= form.input :address, :hint => 'Please enter the street address of the photography session/appointment.', required: false %>
-<%= form.input :state, :hint => 'What state will you/your requested service be located in? Please note that Stephen is located in Connecticut and serves New England and the Mid-Atlantic region.', required: false %>
-<%= form.input :message, :label => 'The description of the service you are requesting. What type of photography are you looking for? What is your timeframe?. Please include any other relevant information', :input_html => { :class => 'medium' } %>
+<%= form.input :state, :hint => 'In what state are you booking an appointment for?', required: false %>
+<%= form.input :message, :label => 'The description of the service you are requesting. Please be specific.', :input_html => { :class => 'medium' } %>
 <div class="form-actions">
   <%= form.button :submit, 'Send Request', :class => 'btn btn-primary' %>
 </div>

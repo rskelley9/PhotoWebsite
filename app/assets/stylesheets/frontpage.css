@@ -1,3 +1,10 @@
+#slider-bs{
+  min-height:600px;
+  min-width:600px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .marketing .row{
   width: 1000px;
   /* margin: 0 auto;*/
@@ -49,6 +56,10 @@
   font-family: "Varela Round";
 }
 
+.marketing h2.gallery-name a.marketing-link{
+  color: #2c3e50;
+}
+
 .gal-description{
   text-indent:5px;
   padding: 10px;
@@ -65,7 +76,7 @@
   background-color: #ecf0f1;
 }
 
-.jumbotron .masthead{
+.jumbotron.masthead{
   margin-top: 70px;
 }
 
@@ -81,3 +92,14 @@
   color: #18bc9c !important;
 }
 
+panel .panel-primary {
+  border: none;
+}
+
+.span12.front-carousel-container{
+  float: inherit;
+}
+
+.front-carousel-container #carousel.carousel{
+height: 400px;
+}

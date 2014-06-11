@@ -1,0 +1,38 @@
+.centered-content{
+ /* margin: 0 auto;*/
+  /*margin-left: 75px;*/
+  font-family: "Varela Round" !important;
+}
+
+.string .optional{
+  height: 30px;
+}
+
+label.string.optional{
+  font-size: 14px;
+}
+
+label.email.required{
+  font-size: 14px;
+}
+
+#contact_request_email{
+  Height: 30px;
+}
+
+.centered-content .row.content .span3 .well h2{
+  font-family: 'Varela Round' !important;
+}
+
+.centered-content .row.content .span3 .well p{
+  font-size:16px;
+}
+
+.centered-content .row.content .span3 .well{
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.centered-content .row.content label{
+  font-size: 18px;
+}

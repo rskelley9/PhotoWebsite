@@ -9,6 +9,7 @@ class HomeController < ApplicationController
     @meta_title = photographer.meta_title.blank? ? photographer.name : photographer.meta_title
     @keywords = photographer.keywords
     @meta_description = photographer.meta_description.blank? ? photographer.description : photographer.meta_description
+    @post_ids = Post.latest_post_ids(3)
   end
 
   def sitemap

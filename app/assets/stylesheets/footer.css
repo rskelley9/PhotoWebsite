@@ -11,3 +11,21 @@
 footer.container{
   font-family: 'Varela Round';
 }
+
+footer{
+  background: #2c3e50;
+}
+
+footer h4{
+  size: 28px;
+}
+
+#foot-content h4{
+  font-family: Yellowtail;
+  font-size: 20px;
+}
+
+#foot-sole h4{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}

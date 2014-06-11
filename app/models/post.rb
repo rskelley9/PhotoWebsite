@@ -51,6 +51,22 @@ class Post < ActiveRecord::Base
     Rails.cache.delete(CACHED_RECENT)
   end
 
+  def self.return_recent_post_urls(number_posts=2)
+    recent_posts = self.order(created_at: :desc).limit(number_posts)
+    recent_posts.map{|recent_post| "/posts/" + "#{recent_post.to_param}" }
+  end
+
+
+  def self.latest_post_ids(number_of_posts=1)
+    last_post_id = self.first.id
+    if number_of_posts > last_post_id
+      first_post_id = 1
+    else
+      first_post_id = last_post_id + 1 - number_of_posts
+      post_ids = (first_post_id..last_post_id).to_a
+    end
+  end
+
   private #----
 
     # Logging
@@ -66,4 +82,4 @@ class Post < ActiveRecord::Base
       Event.create(:description => "Deleted post: #{name}")
     end
 
-end
+  end

@@ -8,6 +8,9 @@
 //= require welcome
 //= require frontpage
 //= require footer
+//= require pricing
+//= require galleries
+//= require request_forms
 //= require override
 
 @mixin clearfix {
@@ -46,6 +49,14 @@ div.jumbotron.masthead{
 //sidebar indent
 body .outer{
 // margin-left:100px;
+}
+
+ul.dropdown-menu{
+  background-color: #2c3e50;
+}
+
+a:hover{
+  text-decoration: none !important;
 }
 
 body.admin {

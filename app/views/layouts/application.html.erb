@@ -13,10 +13,10 @@
   <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
-<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-<body>
+  <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+  <body>
    <%= render :partial => 'shared/navbar' %>
-  <div class="outer">
+   <div class="outer">
     <div class="container" id="content">
       <% if notice %>
       <div class="alert alert-block" data-dismiss="alert">
@@ -38,21 +38,23 @@
         <% end %>
       </div>
       <% end %>
-      <div class="row content">
-        <% if content_for?(:sidebar) %>
-        <div class="span3">
-          <div class="well">
-            <%= yield(:sidebar) %>
-            <p> </p>
-            <p> </p>
+      <div class="centered-content">
+        <div class="row content">
+          <% if content_for?(:sidebar) %>
+          <div class="span3">
+            <div class="well">
+              <%= yield(:sidebar) %>
+              <p> </p>
+              <p> </p>
+            </div>
           </div>
-        </div>
-        <div class="span9">
-          <%= yield %>
-        </div>
-        <% else %>
-        <div class="span12">
-          <%= yield %>
+          <div class="span9">
+            <%= yield %>
+          </div>
+          <% else %>
+          <div class="span12 centered-content">
+            <%= yield %>
+          </div>
         </div>
         <% end %>
       </div>

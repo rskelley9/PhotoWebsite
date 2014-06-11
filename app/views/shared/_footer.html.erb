@@ -54,7 +54,7 @@
           <h4>
             <% unless photographer.phone.blank? %>
               <%= photographer.phone %>
-              \/
+              ||
             <% end %>
             <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
           </h4>
