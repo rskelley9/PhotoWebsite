@@ -1,10 +1,12 @@
 Grokphoto::Application.routes.draw do
 
-  root :to => "home#index"
+  root :to => "home#welcome"
+
   match 'timestamp' => 'home#timestamp' # used to keep passenger spooled up in prod
   match 'sitemap' => 'home#sitemap'
   match 'blog' => 'home#blog'
   get '/welcome' => 'home#welcome'
+  get '/homepage' => 'home#index'
 
   resources :private_galleries, :only => :show
   resources :galleries, :only => [:show, :index]
