@@ -1,3 +1,10 @@
+#slider-bs{
+  min-height:600px;
+  min-width:600px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .marketing .row{
   width: 1000px;
   /* margin: 0 auto;*/
