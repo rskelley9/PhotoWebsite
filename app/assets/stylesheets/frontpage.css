@@ -1,3 +1,7 @@
+/*.container#content{
+  width: 100%;
+}*/
+
 #slider-bs{
   min-height:600px;
   min-width:600px;
