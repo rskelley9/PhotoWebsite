@@ -6,8 +6,9 @@
       <img class="media-object" src="assets/car.jpg" width="100">
     </a>
     <div class="media-body">
-      <h2 class="media-heading"><%= link_to(truncate(post.title, :length => 32), post_url(post)) %></h2>
-
+      <h2 class="media-heading"><%= link_to(truncate(post.title, length: 32), post_url(post)) %>
+      </h2>
+      <%= truncate(post.body, length: 250) %>
     </div>
   </li>
   <% end %>
