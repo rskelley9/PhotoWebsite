@@ -55,6 +55,10 @@ margin-bottom: 20px;
   color: #2c3e50;
 }
 
+ul.frontpage li.media{
+  margin-bottom: 30px;
+}
+
 .panel-body{
   /*background-color: #ecf0f1;*/
   background-color: transparent;

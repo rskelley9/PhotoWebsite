@@ -3,7 +3,8 @@
   <% recent_posts.each do |post| %>
   <li class="media">
     <a class="pull-left" href="#">
-      <img class="media-object" src="assets/car.jpg" width="100">
+     <!--  <img class="media-object" src="assets/car.jpg" width="100"> -->
+   <%= image_tag(post.image.thumb('100x100').url, class: "media-object") if post.image_uid %>
     </a>
     <div class="media-body">
       <h2 class="media-heading"><%= link_to(truncate(post.title, length: 32), post_url(post)) %>
