@@ -43,6 +43,18 @@ border-bottom: 1px solid black !important;
 margin-bottom: 20px;
 }
 
+.frontpage h2.media-heading{
+  font-size: 32px;
+  font-family: 'Yellowtail';
+}
+.frontpage h2.media-heading a:hover{
+ color: #18bc9c;
+}
+
+.frontpage h2.media-heading a{
+  color: #2c3e50;
+}
+
 .panel-body{
   /*background-color: #ecf0f1;*/
   background-color: transparent;
