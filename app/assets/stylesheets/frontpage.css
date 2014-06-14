@@ -6,8 +6,40 @@
   font-family: 'Gotham Book';
 }
 
+#portfolio-panel{
+  -webkit-box-shadow: none;
+}
+
 .media-list.frontpage{
   margin-bottom: 20px;
+}
+
+#header-tagline{
+  font-family: "Gotham Book";
+}
+
+div.blog-widget-container{
+  margin-bottom: 50px;
+}
+
+#carousel-rule-middle{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+hr.frontpage-rule{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr.frontpage-rule#bottom-rule{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+hr.frontpage-rule#carousel-rule{
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 #slider-bs{
@@ -77,12 +109,6 @@ ul.frontpage li.media{
   width: 1000px;
   /* margin: 0 auto;*/
   margin-left: 25px;
-}
-
-#tagline-info p{
-  margin-top: 15px;
-  font-size: 18px;
-  font-style: italic;
 }
 
 .thumbnail {

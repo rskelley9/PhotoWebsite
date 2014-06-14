@@ -34,14 +34,17 @@
     <h1>
       <%= photographer.name %>
     </h1>
-    <p>
+    <p id="header-tagline">
       <%= photographer.tagline %>
     </p>
   </div>
 </div>
 <!-- frontpage carousel replaced with backstretch partial -->
 <%= render "shared/backstretch_carousel" %>
-<div class="panel panel-primary">
+
+<hr class="frontpage-rule" id="carousel-rule">
+
+<div class="panel panel-primary" id="portfolio-panel">
   <div class="panel-heading">
     <h1>Portfolio</h1>
   </div>
@@ -72,11 +75,17 @@
   </div> <!-- end panel panel-primary -->
 </div>
 
+<hr id="carousel-rule-middle">
+
 <% if photographer.blog_url.blank? %>
+<div class="blog-widget-container">
 <div class="row">
   <div class="panel-heading add-bottom-border">
     <h1>Blog Posts</h1>
   </div>
 <%= render "shared/recent-posts-widget" %>
 </div><!-- end row -->
+</div> <!-- end blog-widget-container -->
 <% end %>
+
+<hr class= "frontpage-rule" id="bottom-rule">

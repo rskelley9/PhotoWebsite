@@ -7,9 +7,9 @@
             <h4>Photo Galleries</h4>
             <ul class="unstyled">
               <% galleries.each do |gallery| %>
-                <li>
-                  <%= link_to(truncate(gallery.name, :length => 32), gallery_url(gallery)) %>
-                </li>
+              <li>
+                <%= link_to(truncate(gallery.name, :length => 32), gallery_url(gallery)) %>
+              </li>
               <% end %>
             </ul>
           </div>
@@ -17,9 +17,9 @@
             <h4>Company Info</h4>
             <ul class="unstyled">
               <% pages.each do |page| %>
-                <li>
-                  <%= link_to(truncate(page.name, :length => 32), page_url(page)) %>
-                </li>
+              <li>
+                <%= link_to(truncate(page.name, :length => 32), page_url(page)) %>
+              </li>
               <% end %>
               <li>
                 <%= link_to('Contact', new_contact_request_url) %>
@@ -28,28 +28,31 @@
           </div>
           <div class="span3">
             <% if photographer.blog_url.blank? %>
-              <h4>Recent Posts</h4>
-              <ul class="unstyled">
-                <% recent_posts.each do |post| %>
-                  <li>
-                    <%= link_to(truncate(post.title, :length => 32), post_url(post)) %>
-                  </li>
-                <% end %>
-              </ul>
+            <h4>Recent Posts</h4>
+            <ul class="unstyled">
+              <% recent_posts.each do |post| %>
+              <li>
+                <%= link_to(truncate(post.title, :length => 32), post_url(post)) %>
+              </li>
+              <% end %>
+            </ul>
             <% end %>
           </div>
-          <div class="span7 pull-right" id="tagline-info">
-            <p>
-              <%= photographer.description %>
-            </p>
-            <p class="contact-info">
-            <% unless photographer.phone.blank? %>
-              <%= photographer.phone %>
-            </p>
-            <p class="contact-info">
-            <% end %>
-            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
-            </p>
+          <div class="span7 pull-right" id="tagline-column">
+            <div id="contact-info">
+              <p class="contact-info">
+                <% unless photographer.phone.blank? %>
+                <b>Phone</b>: <%= photographer.phone %>
+                ||
+                <% end %>
+                <b>Email:</b> <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+              </p>
+            </div>
+            <div id="tagline-info">
+              <p>
+                <%= photographer.description %>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -61,8 +64,8 @@
         <div class="span12" id="foot-sole">
           <h4>
             <% unless photographer.phone.blank? %>
-              <%= photographer.phone %>
-              ||
+            <%= photographer.phone %>
+            ||
             <% end %>
             <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
           </h4>
@@ -75,5 +78,5 @@
   </div>
 </footer>
 <% unless photographer.google_analytics_key.blank? %>
-  <%= render :partial => 'shared/google_analytics', :locals => { :key => photographer.google_analytics_key } %>
+<%= render :partial => 'shared/google_analytics', :locals => { :key => photographer.google_analytics_key } %>
 <% end %>
