@@ -2,6 +2,10 @@
   width: 100% !important;
 }
 
+div.navbar-inner{
+  font-family: 'Gotham Book';
+}
+
 #tagline-column{
   margin-top: 15px;
 }
