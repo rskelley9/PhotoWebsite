@@ -1,27 +1,40 @@
 /*  Headings Noodle or Yellowtail
 Body Gotham or Varela Round */
 
-  .push-left{
-    margin-right: 1%;
-  }
+#welcome-logo-container{
+/*  margin-top: 10px;*/
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
 
-  #center-me{
-    width: 100%;
-    text-align:center;
-    color: white;
-  }
+#logo.welcome-title{
+  font-family: 'Noodle';
+  margin-top: 0px;
+}
 
-  .stick-to-bottom{
-    margin-bottom: 1%;
-    position: fixed; bottom: 0;
-  }
+.push-left{
+  margin-right: 1%;
+}
 
-  .welcome-link{
-   /*color: #000000;*/
-   color: white !important;
- }
+#center-me{
+  width: 100%;
+  text-align:center;
+  color: white;
+}
 
- .welcome-title{
+.stick-to-bottom{
+  margin-bottom: 1%;
+  position: fixed; bottom: 0;
+}
+
+.welcome-link{
+ /*color: #000000;*/
+ color: white !important;
+}
+
+.welcome-title{
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
   color: white !important;
 }
@@ -39,7 +52,7 @@ Body Gotham or Varela Round */
   font-family: Noodle;
   /* background: transparent;*/
   /*color: #ffffff*/
-/*  font-family: 'Varela Round';*/
+  /*  font-family: 'Varela Round';*/
   font-size: 24px;
   background-color: rgba(44, 62, 80, 0.1);
   border-color: transparent;

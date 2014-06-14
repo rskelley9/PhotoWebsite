@@ -63,11 +63,12 @@
       <div class="row">
         <div class="span12" id="foot-sole">
           <h4>
-            <% unless photographer.phone.blank? %>
+    <!--         <% unless photographer.phone.blank? %>
             <%= photographer.phone %>
             ||
             <% end %>
-            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %> -->
+            Website and Application by Ryan S. Kelley http://ryanskelley.com
           </h4>
           <p>
             <%= "&copy; #{Time.now.year} #{photographer.name} All Rights Reserved".html_safe %>
