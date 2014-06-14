@@ -23,6 +23,21 @@ clear: both;
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round|Yellowtail);
 
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(/assets/GothamBook.otf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'Noodle';
+  src: url(/assets/BigNoodle.ttf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
 .marketing {
 margin-left: 5%;
 }
