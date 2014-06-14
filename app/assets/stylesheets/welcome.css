@@ -5,6 +5,7 @@
   #center-me{
     width: 100%;
     text-align:center;
+    color: white;
   }
 
   .stick-to-bottom{
@@ -13,41 +14,54 @@
   }
 
   .welcome-link{
-   color: #000000;
+   /*color: #000000;*/
+   color: white !important;
  }
 
  .welcome-title{
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
- }
+  color: white !important;
+}
 
- .welcome-link:hover, .welcome-link:focus{
-  color: #2A6496;
+.welcome-link:hover, .welcome-link:focus{
+ /* color: #2A6496;*/
+ color: #18bc9c !important;
+}
+
+.welcome-title#logo{
+  font-style: normal !important;
 }
 
 #welcome-enter{
-  font-family: pacifico;
-  font-size: 30px;
-  background: transparent;
+  font-family: Yellowtail;
+  /* background: transparent;*/
+  /*color: #ffffff*/
+/*  font-family: 'Varela Round';*/
+  font-size: 24px;
+  background-color: rgba(44, 62, 80, 0.1);
   border-color: transparent;
-  color: #ffffff
+  color: white;
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
 }
 
 #welcome-enter:hover{
-  font-family: pacifico;
-  font-size: 36px;
-  color: #000000;
-/*  border-color: #000000;*/
+  /*  font-family: Yellowtail;*/
+  /* color: #18bc9c;*/
+  /*  border-color: #000000;*/
+  background-color: rgba(44, 62, 80, 0.5);
+
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
+  /*padding-bottom: 15px;
+  padding-top: 7px;*/
 }
 
 
 #welcome-button-div{
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 #links p{
   font-size: 20px;
-font-family: pacifico;
-margin-bottom: 20px;
+  font-family: Yellowtail;
+  margin-bottom: 20px;
 }

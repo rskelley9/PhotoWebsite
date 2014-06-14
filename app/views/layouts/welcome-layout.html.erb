@@ -16,7 +16,7 @@
   <%= csrf_meta_tags %>
   <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
 </head>
-<%= render "/shared/navbar" %>
+<!-- render "/shared/navbar"  -->
 <body class="background-pic">
 
       <%= yield %>
@@ -30,7 +30,7 @@
     ,  "assets/car.jpg"
     , "assets/fox.jpg"
     , "assets/truck.jpg"
-  ], {duration: 3000, fade: 750});
+  ], {duration: 10000, fade: 1000});
   });
 </script>
 </html>
