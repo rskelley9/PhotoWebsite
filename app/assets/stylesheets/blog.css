@@ -1,0 +1,20 @@
+ul.blog-post-list{
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.blog-post-list li h2{
+  font-family: 'Noodle';
+}
+
+ul.blog-post-list li a{
+  color: #2c3e50;
+}
+
+ul.blog-post-list li a:hover{
+  color: #18bc9c;
+}
+
+ul.blog-post-list li {
+  margin-bottom: 40px;
+}

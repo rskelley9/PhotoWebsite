@@ -8,8 +8,8 @@
   width: 100%;
 }
 
-footer.container{
-  font-family: 'Varela Round';
+footer .container{
+  font-family: 'Gotham Book';
 }
 
 footer{
@@ -21,7 +21,7 @@ footer h4{
 }
 
 #foot-content h4{
-  font-family: Yellowtail;
+  font-family: 'Noodle';
   font-size: 20px;
 }
 

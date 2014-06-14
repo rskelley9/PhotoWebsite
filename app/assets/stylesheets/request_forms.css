@@ -1,7 +1,7 @@
 .centered-content{
  /* margin: 0 auto;*/
   /*margin-left: 75px;*/
-  font-family: "Varela Round" !important;
+  font-family: "Gotham Book" !important;
 }
 
 .string .optional{
@@ -21,7 +21,7 @@ label.email.required{
 }
 
 .centered-content .row.content .span3 .well h2{
-  font-family: 'Varela Round' !important;
+  font-family: 'Gotham Book' !important;
 }
 
 .centered-content .row.content .span3 .well p{

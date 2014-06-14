@@ -1,0 +1,33 @@
+#carousel{
+  margin-left: 20%;
+}
+
+#carousel {
+  height: 500px;
+  .carousel-control {
+    top: 47%;
+    width: 0%;
+    opacity: 0;
+  }
+}
+
+.carousel-control:hover {
+  opacity: 0.9;
+}
+
+.page-image{
+  margin: 0px 20px 20px 20px;
+  float: right;
+  height: 240px;
+  width: 300px;
+}
+
+footer .span7.pull-right#tagline-info p{
+  font-family:'Gotham Book';
+  font-size: 16px !important;
+  text-align: left;
+}
+
+.page-header h1:first-child{
+  font-family: 'Noodle';
+};

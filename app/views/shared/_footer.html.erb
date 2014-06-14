@@ -42,6 +42,14 @@
             <p>
               <%= photographer.description %>
             </p>
+            <p class="contact-info">
+            <% unless photographer.phone.blank? %>
+              <%= photographer.phone %>
+            </p>
+            <p class="contact-info">
+            <% end %>
+            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+            </p>
           </div>
         </div>
       </div>
@@ -59,7 +67,7 @@
             <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
           </h4>
           <p>
-            <%= "&copy; #{Time.now.year}, #{photographer.name}, All Rights Reserved".html_safe %>
+            <%= "&copy; #{Time.now.year} #{photographer.name} All Rights Reserved".html_safe %>
           </p>
         </div>
       </div>

@@ -7,9 +7,10 @@
 //= require land
 //= require welcome
 //= require frontpage
-//= require footer
-//= require pricing
+//= require nav-and-footer
+//= require pages
 //= require galleries
+//= require blog
 //= require request_forms
 //= require override
 
@@ -42,7 +43,9 @@ clear: both;
 margin-left: 5%;
 }
 
-.front-heading h1 { font-family: 'Yellowtail', cursive; }
+// .front-heading h1 { font-family: 'Yellowtail', cursive; }
+
+ .front-heading h1 { font-family: 'Noodle'; }
 
 body {
 background-color: #252525 !important;
@@ -50,7 +53,7 @@ background-color: #252525 !important;
 
 // navbar logo color
 a.brand{
-font-family: 'Yellowtail';
+font-family: 'Noodle';
 background-color: black;
 }
 

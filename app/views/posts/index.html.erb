@@ -1,0 +1,18 @@
+<% content_for :title, 'Blog' %>
+<ul class="blog-post-list">
+  <% @posts.each do |post| %>
+  <li>
+    <h2>
+      <%= link_to(post.title, post_path(post)) %>
+    </h2>
+    <p>
+      <%= keywords_to_labels(post.keywords) %>
+    </p>
+    <%= truncate(post.body, :length => 500).to_html.html_safe %>
+  </li>
+  <% end %>
+</ul>
+<br/>
+<p>
+  <%= paginate @posts %>
+</p>
