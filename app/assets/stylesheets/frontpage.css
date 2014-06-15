@@ -2,6 +2,16 @@
   width: 100%;
 }*/
 
+.affiliates-container{
+margin: 0 auto;
+}
+
+.affiliates-container .row.affiliates{
+  text-align: center;
+  margin-left: 80px;
+  padding-top:50px;
+  padding-bottom:50px;
+}
 
 #frontpage-logo-container{
   margin-top: 50px;
