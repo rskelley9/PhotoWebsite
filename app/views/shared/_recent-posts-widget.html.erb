@@ -9,7 +9,9 @@
     <div class="media-body">
       <h2 class="media-heading"><%= link_to(truncate(post.title, length: 32), post_url(post)) %>
       </h2>
+      <div class="post-preview">
       <%= truncate(post.body, length: 250) %>
+    </div>
     </div>
   </li>
   <% end %>
