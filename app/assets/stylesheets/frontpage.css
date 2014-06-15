@@ -2,6 +2,14 @@
   width: 100%;
 }*/
 
+.affiliates #shadowroom{
+  margin-top: 30px;
+}
+
+.affiliates #pulse{
+  margin-top: 35px;
+}
+
 .affiliates-container{
 margin: 0 auto;
 }
@@ -9,8 +17,8 @@ margin: 0 auto;
 .affiliates-container .row.affiliates{
   text-align: center;
   margin-left: 80px;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 #frontpage-logo-container{
