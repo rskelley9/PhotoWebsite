@@ -7,6 +7,7 @@
 <% end %>
 <%= simple_form_for(@service_request, :url => service_requests_path, :html => { :class => 'form-vertical' }) do |form| %>
 <%= render "shared/error_messages", :target => @service_request %>
+
 <%= form.input :name, :hint => 'Your name' %>
 <%= form.input :email, :hint => 'Your email address so I can get back to you.' %>
 <%= form.input :phone, :hint => 'Your preferred contact phone number.' %>
@@ -22,40 +23,18 @@
 
 <style>
 
-.string .optional{
-  Height: 30px;
-}
 
-label.string.optional{
-  font-size: 14px;
-}
-
-label.email.required{
-  font-size: 14px;
-}
-
-#service_request_email{
-  Height: 30px;
-}
-
-#service_request_phone{
-  Height: 30px;
-}
-
-label.boolean.optional.control-label{
-  Height:10px;
-  margin-top:15px;
-}
-
-label.checkbox{
-  margin-bottom:15px;
-
-}
-
-label.checkbox:before{
-  content: "Check this box if you prefer Stephen phones you in the evening.";
-  font-style:italic;
-  font-weight:200;
-}
 
 </style>
+
+// <script>
+
+// $('document').ready(function(){
+
+//   $('input').on('focus', function(){ $.closest('.help-block').show()
+
+// });
+
+// });
+
+// </script>

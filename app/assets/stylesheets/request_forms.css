@@ -1,38 +1,68 @@
 .centered-content{
  /* margin: 0 auto;*/
-  /*margin-left: 75px;*/
-  font-family: "Gotham Book" !important;
+ /*margin-left: 75px;*/
+ font-family: "Gotham Book" !important;
 }
 
-.string .optional{
-  height: 30px;
+#service_request_name, #service_request_email, #service_request_address, #service_request_message{
+  min-height: 40px !important;
+  min-width: 100%;
 }
 
-label.string.optional{
+#service_request_state{
+  min-height: 40px !important;
+  min-width: 30%;
+}
+
+#service_request_phone{
+  min-height: 40px !important;
+  min-width: 50%;
+}
+
+.controls input.string, #service_request_message{
+  font-size: 18px;
+}
+
+.help-block{
   font-size: 14px;
-}
-
-label.email.required{
-  font-size: 14px;
+  font-style: italic;
+  display:none !important;
 }
 
 #contact_request_email{
   Height: 30px;
 }
 
-.centered-content .row.content .span3 .well h2{
+.centered-content .row.content .well h2{
   font-family: 'Gotham Book' !important;
 }
 
-.centered-content .row.content .span3 .well p{
+.centered-content .row.content .well p{
   font-size:16px;
 }
 
-.centered-content .row.content .span3 .well{
+.centered-content .row.content .well{
   padding-left: 9px;
   padding-right: 9px;
 }
 
 .centered-content .row.content label{
   font-size: 18px;
+}
+
+
+.boolean.optional.control-label{
+  Height:10px;
+  margin-top:15px;
+}
+
+.checkbox{
+  margin-bottom:5%;
+
+}
+
+.checkbox:before{
+  content: "Check this box if you prefer Stephen phones you in the evening.";
+  font-style:italic;
+  font-weight:200;
 }

@@ -12,7 +12,7 @@
 <%= simple_form_for(@contact_request, :url => contact_requests_path, :html => { :class => 'form-vertical' }) do |form| %>
 <%= render "shared/error_messages", :target => @contact_request %>
 <%= form.input :name, :hint => 'Your name' %>
-<%= form.input :email, :hint => 'Your email address so I can get back to you.' %>
+<%= form.input :email, :hint => 'Your email address so Stephen can get back to you.' %>
 <%= form.input :message, :hint => 'Your message.', :input_html => { :class => 'medium' } %>
 <div class="form-actions">
   <%= form.button :submit, 'Send Request', :class => 'btn btn-primary' %>
