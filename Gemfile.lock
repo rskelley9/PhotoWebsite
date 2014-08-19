@@ -1,4 +1,5 @@
 GEM
+  remote: https://rails-assets.org/
   remote: http://rubygems.org/
   specs:
     actionmailer (3.2.11)
@@ -139,6 +140,7 @@ GEM
       activesupport (= 3.2.11)
       bundler (~> 1.0)
       railties (= 3.2.11)
+    rails-assets-RRSSB (1.6.0)
     railties (3.2.11)
       actionpack (= 3.2.11)
       activesupport (= 3.2.11)
@@ -235,6 +237,7 @@ DEPENDENCIES
   pg
   rack-cache
   rails (= 3.2.11)
+  rails-assets-RRSSB
   rdiscount (~> 1.6)
   responders (~> 0.9)
   rspec-rails (~> 2.7)
