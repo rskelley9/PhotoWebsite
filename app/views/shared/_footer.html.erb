@@ -3,7 +3,7 @@
     <div class="row">
       <div class="span12" id="foot-content">
         <div class="row">
-          <div class="span2">
+          <div class="col-xs-2">
             <h4>Photo Galleries</h4>
             <ul class="unstyled">
               <% galleries.each do |gallery| %>
@@ -13,7 +13,7 @@
               <% end %>
             </ul>
           </div>
-          <div class="span2">
+          <div class="col-xs-2">
             <h4>Company Info</h4>
             <ul class="unstyled">
               <% pages.each do |page| %>
@@ -26,7 +26,7 @@
               </li>
             </ul>
           </div>
-          <div class="span3">
+          <div class="col-xs-3">
             <% if photographer.blog_url.blank? %>
             <h4>Recent Posts</h4>
             <ul class="unstyled">
@@ -38,14 +38,15 @@
             </ul>
             <% end %>
           </div>
-          <div class="span7 pull-right" id="tagline-column">
+          <div class="col-xs-5 pull-right" id="tagline-column">
             <div id="contact-info">
-              <p class="contact-info">
+              <p>
                 <% unless photographer.phone.blank? %>
-                <b>Phone</b>: <%= photographer.phone %>
-                ||
+                <strong>Phone</strong>: <%= photographer.phone %>
                 <% end %>
-                <b>Email:</b> <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+              </p>
+              <p>
+                <strong>Email:</strong> <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
               </p>
             </div>
             <div id="tagline-info">
@@ -60,20 +61,18 @@
   </div>
   <div id="footer-floor">
     <div class="container">
-      <div class="row">
-        <div class="span12" id="foot-sole">
-          <h4>
-    <!--         <% unless photographer.phone.blank? %>
-            <%= photographer.phone %>
-            ||
-            <% end %>
-            <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %> -->
-            Website and Application by Ryan S. Kelley http://ryanskelley.com
-          </h4>
-          <p>
-            <%= "&copy; #{Time.now.year} #{photographer.name} All Rights Reserved".html_safe %>
-          </p>
+      <div class="row" id="foot-sole">
+
+        <div class="col-xs-12">
+          <%= "&copy; #{Time.now.year} #{photographer.name} All Rights Reserved".html_safe %>
+          Website Development by <a href="http://www.ryanskelley.com">Ryan Kelley</a>
+          <% unless photographer.phone.blank? %>
+          <%= link_to(photographer.phone, "tel:#{photographer.phone}") %>
+          <% end %>
+          <%= mail_to(photographer.email, photographer.email, :encode => 'javascript').html_safe %>
+
         </div>
+
       </div>
     </div>
   </div>

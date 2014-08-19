@@ -10,18 +10,17 @@ div.navbar-inner{
   margin-top: 15px;
 }
 
-#foot-sole{
-  margin: 0 auto;
-  text-align: right;
-  width: 100%;
-}
-
 footer .container{
   font-family: 'Gotham Book';
 }
 
+#foot-sole{
+  margin-bottom: 1%;
+}
+
 footer{
   background: #2c3e50;
+  color: #dddddd;
 }
 
 footer h4{
@@ -33,12 +32,7 @@ footer h4{
   font-size: 20px;
 }
 
-#foot-sole h4{
-  margin-top: 3px;
-  margin-bottom: 3px;
-}
-
-footer .span7.pull-right#tagline-info p{
+footer .pull-right#tagline-info p{
   font-family:'Gotham Book';
   text-align: left;
 }
@@ -48,17 +42,17 @@ footer .span7.pull-right#tagline-info p{
   font-style: italic;
 }
 
-footer div#contact-info p.contact-info{
+footer #contact-info p{
   font-family: 'Gotham Book' !important;
   font-size: 16px;
   text-align: left;
   color: white;
   font-style: normal !important;
 }
-footer div#contact-info p.contact-info a{
- color: white;
+footer #contact-info p a{
+ color: #dddddd;
 }
 
-footer div#contact-info p.contact-info a:hover{
+footer #contact-info p a:hover{
  color: #18bc9c;
 }
