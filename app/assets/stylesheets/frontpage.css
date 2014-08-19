@@ -2,8 +2,74 @@
   width: 100%;
 }*/
 
+.affiliates #shadowroom{
+  margin-top: 30px;
+}
+
+.affiliates #pulse{
+  margin-top: 35px;
+}
+
+.affiliates-container{
+margin: 0 auto;
+}
+
+.affiliates-container .row.affiliates{
+  text-align: center;
+  margin-left: 80px;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+#frontpage-logo-container{
+  margin-top: 50px;
+}
+
+div#frontpage-logo-container{
+  text-align: center;
+  margin-bottom: -60px;
+  margin-right: 20px; /*if image size is 500*/
+
+}
+
+.post-preview{
+  font-family: 'Gotham Book';
+}
+
+#portfolio-panel{
+  -webkit-box-shadow: none;
+}
+
 .media-list.frontpage{
   margin-bottom: 20px;
+}
+
+#header-tagline{
+  font-family: "Gotham Book";
+}
+
+div.blog-widget-container{
+  margin-bottom: 50px;
+}
+
+#carousel-rule-middle{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+hr.frontpage-rule{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr.frontpage-rule#bottom-rule{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+hr.frontpage-rule#carousel-rule{
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 #slider-bs{
@@ -32,7 +98,7 @@ border-color: #2c3e50;
 
 .panel-heading h1{
   font-size: 42px;
-  font-family: 'Yellowtail';
+  font-family: 'Noodle';
 }
 
 .panel-heading.add-bottom-border {
@@ -45,7 +111,7 @@ margin-bottom: 20px;
 
 .frontpage h2.media-heading{
   font-size: 32px;
-  font-family: 'Yellowtail';
+  font-family: 'Noodle';
 }
 .frontpage h2.media-heading a:hover{
  color: #18bc9c;
@@ -75,12 +141,6 @@ ul.frontpage li.media{
   margin-left: 25px;
 }
 
-#tagline-info p{
-  margin-top: 15px;
-  font-size: 18px;
-  font-style: italic;
-}
-
 .thumbnail {
   position: relative;
   padding: 0px;
@@ -94,7 +154,7 @@ ul.frontpage li.media{
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 2px;
-  font-family: yellowtail;
+  font-family: "Noodle";
   text-indent: 5px;
 }
 
@@ -110,7 +170,7 @@ ul.frontpage li.media{
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 2px;
-  font-family: yellowtail;
+  font-family: "Noodle";
   text-indent: 5px;
 }
 
@@ -133,7 +193,7 @@ ul.frontpage li.media{
 }
 
 .thumbnail .content p{
-  font-family: "Varela Round";
+  font-family: "Gotham Book";
 }
 
 .marketing h2.gallery-name a.marketing-link{
@@ -148,7 +208,10 @@ ul.frontpage li.media{
 }
 
 .jumbotron.masthead{
-  margin-top: 70px;
+ /* without image uncomment margin*/
+/*  margin-top: 70px;*/
+margin-top: 0px;
+padding-top: 0px;
 }
 
 .navbar-inner{

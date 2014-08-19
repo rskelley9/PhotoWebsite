@@ -1,0 +1,64 @@
+#foot-content.span12{
+  width: 100% !important;
+}
+
+div.navbar-inner{
+  font-family: 'Gotham Book';
+}
+
+#tagline-column{
+  margin-top: 15px;
+}
+
+#foot-sole{
+  margin: 0 auto;
+  text-align: right;
+  width: 100%;
+}
+
+footer .container{
+  font-family: 'Gotham Book';
+}
+
+footer{
+  background: #2c3e50;
+}
+
+footer h4{
+  size: 28px;
+}
+
+#foot-content h4{
+  font-family: 'Noodle';
+  font-size: 20px;
+}
+
+#foot-sole h4{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+footer .span7.pull-right#tagline-info p{
+  font-family:'Gotham Book';
+  text-align: left;
+}
+
+#tagline-info p{
+  font-size: 18px;
+  font-style: italic;
+}
+
+footer div#contact-info p.contact-info{
+  font-family: 'Gotham Book' !important;
+  font-size: 16px;
+  text-align: left;
+  color: white;
+  font-style: normal !important;
+}
+footer div#contact-info p.contact-info a{
+ color: white;
+}
+
+footer div#contact-info p.contact-info a:hover{
+ color: #18bc9c;
+}

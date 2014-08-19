@@ -1,24 +1,40 @@
-  .push-left{
-    margin-right: 1%;
-  }
+/*  Headings Noodle or Yellowtail
+Body Gotham or Varela Round */
 
-  #center-me{
-    width: 100%;
-    text-align:center;
-    color: white;
-  }
+#welcome-logo-container{
+/*  margin-top: 10px;*/
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
 
-  .stick-to-bottom{
-    margin-bottom: 1%;
-    position: fixed; bottom: 0;
-  }
+#logo.welcome-title{
+  font-family: 'Noodle';
+  margin-top: 0px;
+}
 
-  .welcome-link{
-   /*color: #000000;*/
-   color: white !important;
- }
+.push-left{
+  margin-right: 1%;
+}
 
- .welcome-title{
+#center-me{
+  width: 100%;
+  text-align:center;
+  color: white;
+}
+
+.stick-to-bottom{
+  margin-bottom: 1%;
+  position: fixed; bottom: 0;
+}
+
+.welcome-link{
+ /*color: #000000;*/
+ color: white !important;
+}
+
+.welcome-title{
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(224, 224, 224);
   color: white !important;
 }
@@ -33,10 +49,10 @@
 }
 
 #welcome-enter{
-  font-family: Yellowtail;
+  font-family: Noodle;
   /* background: transparent;*/
   /*color: #ffffff*/
-/*  font-family: 'Varela Round';*/
+  /*  font-family: 'Varela Round';*/
   font-size: 24px;
   background-color: rgba(44, 62, 80, 0.1);
   border-color: transparent;
@@ -45,7 +61,7 @@
 }
 
 #welcome-enter:hover{
-  /*  font-family: Yellowtail;*/
+  /*  font-family: Noodle;*/
   /* color: #18bc9c;*/
   /*  border-color: #000000;*/
   background-color: rgba(44, 62, 80, 0.5);
@@ -62,6 +78,6 @@
 
 #links p{
   font-size: 20px;
-  font-family: Yellowtail;
+  font-family: Noodle;
   margin-bottom: 20px;
 }

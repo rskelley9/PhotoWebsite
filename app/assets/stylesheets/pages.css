@@ -14,3 +14,14 @@
 .carousel-control:hover {
   opacity: 0.9;
 }
+
+.page-image{
+  margin: 0px 20px 20px 20px;
+  float: right;
+  height: 240px;
+  width: 300px;
+}
+
+.page-header h1:first-child{
+  font-family: 'Noodle';
+};

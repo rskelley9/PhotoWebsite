@@ -7,10 +7,12 @@
 //= require land
 //= require welcome
 //= require frontpage
-//= require footer
-//= require pricing
+//= require nav-and-footer
+//= require pages
 //= require galleries
+//= require blog
 //= require request_forms
+//= require nav-alternate-clear
 //= require override
 
 @mixin clearfix {
@@ -23,11 +25,28 @@ clear: both;
 
 @import url(http://fonts.googleapis.com/css?family=Varela+Round|Yellowtail);
 
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(/assets/GothamBook.otf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+  font-family: 'Noodle';
+  src: url(/assets/BigNoodle.ttf);
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
 .marketing {
 margin-left: 5%;
 }
 
-.front-heading h1 { font-family: 'Yellowtail', cursive; }
+// .front-heading h1 { font-family: 'Yellowtail', cursive; }
+
+ .front-heading h1 { font-family: 'Noodle'; }
 
 body {
 background-color: #252525 !important;
@@ -35,7 +54,7 @@ background-color: #252525 !important;
 
 // navbar logo color
 a.brand{
-font-family: 'Yellowtail';
+font-family: 'Noodle';
 background-color: black;
 }
 

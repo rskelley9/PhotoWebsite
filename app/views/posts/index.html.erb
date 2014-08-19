@@ -1,0 +1,21 @@
+<% content_for :title, 'Blog' %>
+<ul class="blog-post-list">
+  <% @posts.each do |post| %>
+  <li>
+    <h2>
+      <%= link_to(post.title, post_path(post)) %>
+    </h2>
+    <h6><%= post.created_at.to_date.strftime("Posted on %m/%d/%Y by ") %><%= photographer.name %></h6>
+    <div class="post-body-text">
+    <%= truncate(post.body, :length => 500).to_html.html_safe %>
+  </div>
+    <p>
+      <%= keywords_to_labels(post.keywords) %>
+    </p>
+  </li>
+  <% end %>
+</ul>
+<br/>
+<p>
+  <%= paginate @posts %>
+</p>
